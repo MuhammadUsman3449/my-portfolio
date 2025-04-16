@@ -27,7 +27,7 @@ const Skills = () => {
             <SectionHeading>
                 My Skills
             </SectionHeading>
-            <ul className='flex flex-wrap justify-center gap-2 text-lg text-gray-800'>
+            <ul className='flex flex-wrap justify-center gap-4 text-lg text-white'>
                 {
                     skillsData.map((skill, index) => (
                         <motion.li
@@ -39,7 +39,7 @@ const Skills = () => {
                             }}
                             custom={index}
                             key={index}
-                            className='bg-white border border-black/[0.1] rounded-xl px-5 py-3'>
+                            className='bg-gray-900 border border-gray-400/[0.1] rounded-xl px-5 py-3'>
                             {skill}
                         </motion.li>
                     ))

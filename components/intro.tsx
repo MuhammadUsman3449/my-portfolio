@@ -6,7 +6,7 @@ import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
 import { FaGithubSquare } from 'react-icons/fa';
 import { HiDownload } from 'react-icons/hi';
 import Link from 'next/link';
-import potofolio from "../public/portfolio2.jpg";
+import potofolio from "../public/potofolio.jpg";
 import useSectionInView from '@/lib/hooks';
 
 const Intro = () => {
@@ -26,11 +26,11 @@ const Intro = () => {
                     >
                         <Image src={potofolio}
                             alt='Image'
-                            width="150"
-                            height="150"
+                            width={150}
+                            height={150}
                             quality="95"
                             priority={true}
-                            className='h-32 w-32 rounded-full object-cover border-[0.34rem] border-white shadow-xl'
+                            className='h-40 w-40 rounded-full object-cover border-[0.34rem] border-white shadow-xl'
                         />
                     </motion.div>
                     <motion.span
@@ -59,7 +59,7 @@ const Intro = () => {
             </motion.p>
 
             <motion.div
-                className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+                className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium"
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
@@ -80,7 +80,7 @@ const Intro = () => {
 
                 <a
                     className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-                    href="/CV.pdf"
+                    href="/MuhammadUsmanResumes.pdf"
                     download
                 >
                     Download CV{" "}
